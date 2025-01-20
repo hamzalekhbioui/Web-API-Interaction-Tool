@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Ensure main.py is executable
 if [ ! -f "main.py" ]; then
     echo "Error: main.py not found in the current directory."
     exit 1
@@ -33,6 +32,4 @@ esac
 
 read -p "Enter the search value: " query_value
 
-# Run main.py with the query type and value
 python3 main.py "$query_type" "$query_value"
-
